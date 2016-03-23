@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mailing</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<style>
+		#lala{
+			position:relative;;
+			top:0;
+			left: 0;
+			width:491px;
+			height: 527px;
+			background-color: #2a84ff;
+			background-image:url('diloo_logo.png'),url('burbujas.png'),url('sentado.png'),url('sillon.png'),url('brillo.png'),url('Ellipse-1.png');
+			background-position:40px 40px, 30px 150px,300px 230px,130px 360px,10px 10px,130px 450px;
+			background-repeat: no-repeat;
+			background-size:140px,300px,140px,350px,800px, 350px;
+		}
+		#text{
+			position: absolute;
+			top:30px;
+			left: 220px;
+		}
+		#text p{
+			color:white;
+			font-size: 18px;
+			padding: 0;
+			margin:0;
+			font-family: 'Open Sans', sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				<div id="lala">
+					<div id="text">
+						<p>¡Estas a solo <b>1 paso</b> de evitar <br>
+							esas llamadas tediosas!</p>
+						<img onClick="store()" style="margin-top:20px;margin-bottom:20px" name="button" alt="descargar ahora" src="boton.png" width="130px">
+						<div class="stores">
+							<p  style="font-size:12px;display:inline-block;vertical-align:middle">disponible en:</p>
+							<img style="width:150px;margin-left:10px;display:inline-block;vertical-align:middle" src="appstore.png" alt="tiendas">
+						</div>
+					</div>
+				</div>
+
+			</td>
+		</tr>
+	</table>
+	<script>
+		function store(){
+			//iPhone Version:
+			if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+			    window.location = "https://itunes.apple.com/pe/app/dilooapp/id1057665139?l=en&mt=8";
+			}
+			//Android Version:
+			if(navigator.userAgent.match(/android/i)) {
+			    window.location = "https://play.google.com/store/apps/details?id=com.capr.diloo";
+			}
+		}
+	</script>
+</body>
+</html>
